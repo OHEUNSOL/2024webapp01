@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        document.write("test");
+        console.log("hello");
+
+        var day;
+        var week=new Date().getDay();
+        console.log(week)
+
+        switch(week){
+            case 0: 
+                day='일요일';
+                break;
+            case 2:
+                day='화요일';
+                break;
+
+        }
+
+        // document.write('오늘은 ' + day + '입니다.')
+        document.write('오늘은 ${day} 입니다. ')
+
+        var city=["서울", "부산", "대구"]
+
+        function printA() {
+            for(var i=0; i<city.length;i++) {
+                document.write('${city[i]}<br>')
+            }
+        }
+
+        printA();
+
+        city.forEach(function(){})
+
+        function printArr(item, i){
+            document.write("배열데이터 [" + i + "]" + item + "<br>")
+        }
+        city.forEach(printArr);
+
+
+        city.forEach(function(item, i){
+            document.write("배열데이터 [" + i + "] : " + item + "<br>")
+        })
+
+    </script>
+
+</body>
+</html>

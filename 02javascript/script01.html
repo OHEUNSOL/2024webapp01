@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- 변수 let, const
+    함수 arrow function
+    배열 spread operator
+    반복문 for of / map
+    class
+    promise 동기, 비동기 - async await
+     -->
+
+    <!-- 
+     var -> 초깃값 설정 여러번 가능해서 잘 사용하지 않음
+     let -> 초깃값 한번만 가능, 변수 변경 가능
+     const -> 초깃값 한번만 가능, 변수 변경 불가능 -->
+
+
+    <script>
+        let han=1;
+        // han=10;
+        // console.log(han)
+
+        // const obj = function() {
+        //     console.log(han)
+        // }
+
+        // const obj = (x, y) => {
+        //     return x+y
+        // }
+
+        const obj = (x, y) => x*y
+
+        obj(10, 20);
+
+        // 깊은 복사
+        const a = [1,2,3]
+        const b=[...a]
+        b[0]=10
+        console.log("b :"+b);
+        console.log("a :"+a)
+
+
+        for(const item of a){
+            console.log(item)
+        }
+
+        for(let i=0; i<a.length, i++){
+            console.log(a[i])
+        }
+
+    </script>
+
+</body>
+</html>

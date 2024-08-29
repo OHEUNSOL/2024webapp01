@@ -1,0 +1,132 @@
+@charset "utf-8";
+
+.body{
+    height: 300vh;
+    /* 폰트 변경 */
+    font-family: "Noto Sans KR", sans-serif;
+}
+
+.container{
+    width: 1280px;
+    margin: 0 auto;
+
+}
+
+.bg-gray{
+    background-color: grey !important;
+}
+
+.bg-orange{
+    background-color: orange !important;
+}
+
+.bg-sky{
+    background-color: skyblue;
+}
+
+.hd{
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    position: fixed;
+    width: 100%;
+    background-color: white;
+    z-index: 99999;
+}
+
+.menuWrap{
+    display: flex;
+    justify-content: space-between;
+    height: 70px;
+    padding: 10px;
+    /* align-items: center; */
+}
+
+.menuWrap .gnb ul{display: flex;}
+/* .menuWrap .sns{display: flex;} */
+.menuWrap .gnb li{width: 150px;height: 70px;}
+/* 마우스 올릴 시 링크 범위=> li에 높이값 처리하고 자식(a)에 100% */
+.menuWrap .gnb a{
+    display: block;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.menuWrap .gnb a:hover {
+    font-weight: bold;
+}
+
+.menuWrap .sns{
+    display: flex;
+    align-self: center;
+    gap:10px;
+}
+
+.menuWrap .sns li{
+    width: 40px; 
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background: blue;
+    color:white
+
+}
+
+.visual{
+    min-height: 600px;
+    height: 100vh;
+    margin-bottom: 50px;
+}
+
+.top{
+    width: 100px;
+    height: 10px;
+    position: fixed;
+    right: 10px;
+    bottom: 10px;
+
+    background-color: red;
+    border-radius: 50%;
+}
+
+.banner{
+    display: flex;
+    justify-content: space-between;
+}
+
+.banner .card{
+    width: 384px;
+    height: 580px;
+
+}
+
+.banner .card .imgWrap img{
+    transition: 0.3s;
+    width: 384px;
+    height: 400px;
+}
+
+
+.banner .card .imgWrap:hover img{
+    /* transform:translate(0, -20px) scale(1.1) rotate(10deg) ; */
+    transform: translate(-20px, -20px);
+    box-shadow: 30px 30px 20px rgba(0,0,0,0.3);
+}
+
+/* .banner .card:hover .imgWrap img{
+
+} */
+
+
+
+.banner .card .card-text{
+    padding: 16px 16px;
+
+}
+
+.banner .card .card-text h3{
+    margin-bottom: 10px;
+}

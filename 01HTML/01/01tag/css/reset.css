@@ -1,0 +1,18 @@
+@charset "utf-8";
+
+*{margin:0; padding:0; box-sizing: border-box}
+/* letter-spacing -> 글자 간격 */
+ul,li{letter-spacing: none;list-style-type: none;}
+
+a:link, a:visited{
+    text-decoration: none;
+    color: black;
+    
+}
+
+.clearfix:after{
+    content:"";
+    display: block;
+    clear: both;
+    /* flex사용시 clear사용 안해도 됨 */
+}

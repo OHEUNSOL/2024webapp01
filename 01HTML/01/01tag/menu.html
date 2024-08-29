@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{margin: 0;padding: 0;}
+        a:link,a:visited{text-decoration: none;color:black}
+        ul,li{list-style: none;}
+        .clear:after{
+            content:"";
+            display: block;clear: both;
+        }
+
+        .hd{background-color: blue;}
+
+        .menu{width: 1360px;margin: 0 auto;background-color: skyblue;}
+        .menu>li{float: left;width: 20%;}
+        .menu>li>a{
+            line-height: 60px;
+            display: block;
+            width: 100%;
+            text-align: center;
+        }
+        .menu a:hover{
+            background-color: green;
+            color:white
+        }
+
+        .visual{
+            background-color: green;
+            height: 400px;
+            margin-bottom: 1em;
+        }
+
+        .section{
+            width: 1360px;
+            margin: 0 auto;
+            margin-bottom: 1em;
+        }
+
+
+        .section .secLeft{
+            float: left; width: 1000px;
+            background: skyblue;
+
+        }
+        .section .secRight{
+            float: right;
+            width: 300px;
+            background-color: pink;
+        }
+        .section div{height: 700px;}
+
+        .ft{
+            background: green;
+            padding: 20px 0;
+        }
+        .ft div{
+            width: 1360px;
+            margin: 0 auto;
+            text-align: center;
+            background-color: orange;
+            padding: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <header class="hd">
+        <ul class="menu clear"><!-- w1360 -->
+            
+            <li><a href="#">menu1</a></li>
+            <li><a href="#">menu2</a></li>
+            <li><a href="#">menu3</a></li>
+            <li><a href="#">menu4</a></li>
+            <li><a href="#">menu5</a></li>
+        </ul>
+    </header>
+    <div class="visual"> slide </div>
+    <section class="section clear"> <!-- w1360 -->
+        <div class="secLeft">left</div>
+        <div class="secRight">right</div>
+    </section>
+
+    <footer class="ft">
+        <div> <!-- w1360 -->
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Culpa, minima!
+        </div>
+    </footer>
+   
+</body>
+</html>

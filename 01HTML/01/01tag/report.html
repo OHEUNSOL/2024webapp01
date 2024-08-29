@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.17/jquery.bxslider.css" integrity="sha512-rV4fiystTwIvs71MLqeLbKbzosmgDS7VU5Xqk1IwFitAM+Aa9x/8Xil4CW+9DjOvVle2iqg4Ncagsbgu2MWxKQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+<style>
+    /* reset  */
+    *{margin: 0;padding: 0;box-sizing: border-box;}
+    a:link,a:visited{text-decoration: none;color:#333}
+    ul,li{list-style: none;}
+    .clear:after{
+        content:"";
+        display: block;
+        clear: both;
+    }
+    img{display: block;}
+    .c-brown{
+        color: white
+    }
+
+    .menuWrap{
+
+
+        display: flex;
+        height: 70px;
+        padding: 10px;
+        justify-content: space-between;
+        align-items: center;
+        /* align-items: center; */
+
+    }
+
+    .menuWrap h1{
+            /* float: right; */
+            font-size: 20px;
+            color: brown;
+            height: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 200px;
+    
+        
+    }
+
+    .menuWrap .gnb{
+        display: flex;
+        /* float: right; */
+        font-size: 18px;
+        justify-content: end;
+
+    }
+    .menuWrap .gnb li{
+            /* float: right; */
+            /* background-color: blue; */
+            /* width: 100px;
+            height: 50px; */
+            padding: 20px;
+            align-items: center;
+
+    }
+
+    .menuWrap .gnb a{
+        display: block;
+        background-color: #fff;
+        width: 100%;
+        height: 100%;
+        /* justify-content: center;
+        align-items: center; */
+        transition: 0.3s;
+        
+    }
+
+    .menuWrap .gnb a:hover {
+        font-weight: bold;
+        color: brown;
+    }
+
+
+
+    .menuWrap .star{
+        display: flex;
+        align-self: center;
+        color:yellow;
+        position: absolute;
+        
+    }
+
+    /* visual  */
+
+
+    .bx-wrapper {
+        -moz-box-shadow: none;
+        -webkit-box-shadow: none;
+        box-shadow: none;
+        border: 0 none;
+        background: #fff;
+    }
+
+    .visual .item{
+        height:600px;
+        /* background-color: skyblue; */
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-repeat: no-repeat;
+        background-size:cover;
+
+    }
+
+    .visual .item.st1{
+        background-image: url(./images/1.jpg);
+    }
+    .visual .item.st2{
+        background-image: url(./images/2.jpg);
+    }
+
+    
+    .visual .item .textWrap{
+        width: 1360px;
+        /* background-color: white; */
+        padding-left:20px;
+        color:white;
+        text-shadow: 0 0 10px rgba(0,0,0,0.5) ;
+    }
+
+    .visual .item .textWrap .mb20{
+        font-size:70px
+    }
+
+    hr{
+        width: 40%;
+        height: 5px;
+        background-color: white;
+    }
+
+
+
+</style>
+
+</head>
+<body>
+    <header class="hd">
+        <div class="container menuWrap">
+            <h1>넷마블문화재단</h2>
+
+            <ul class="star">
+                <li><i class="fa-solid fa-star"></i></li>
+            </ul> 
+
+            <nav class="gnb clear">
+                <li><a href="#">재단소개</a></li>
+                <li><a href="#">재단활동</a></li>
+                <li><a href="#">재단소식</a></li>
+            </nav>
+
+
+        </div>  
+
+    </header>
+
+    <div class="visual">
+        <ul class="slide">
+            <li class="item st1">
+                <div class="textWrap"> <!-- w1360px -->
+                    <h3 class="mb20">Lorem, ipsum1.</h3>
+                    <p><br><hr><br> ipsum dolor sit amet consectetur<br>adipisicing elit. Et, iusto.</p>
+                </div>
+            </li>
+            <li class="item st2">
+                <div class="textWrap"> <!-- w1360px -->
+                    <h3 class="mb20">Lorem, ipsum2.</h3>
+                    <p><br><hr><br>Lorem, ipsum dolor sit amet consectetur<br>adipisicing elit. Et, iusto.</p>
+                </div>
+            </li>
+            
+        </ul>
+    </div>
+
+    <script src="./js/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.17/jquery.bxslider.min.js" integrity="sha512-LaBO0tZh1+6Ebk+EnHt/WsGM0UnmkCXfQ1rfhGmpa5MXUdslNuSSELBRcteHKz4k4ny+Op10Ax2fPoTNq+VcUg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+
+        
+            $(".slide").bxSlider({
+                auto:true
+            });
+      
+       
+    </script>
+
+</body>
+</html>
