@@ -4,9 +4,10 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bxslider/4.2.17/jquery.bxslider.css" integrity="sha512-rV4fiystTwIvs71MLqeLbKbzosmgDS7VU5Xqk1IwFitAM+Aa9x/8Xil4CW+9DjOvVle2iqg4Ncagsbgu2MWxKQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
+  
 <style>
     /* reset  */
     *{margin: 0;padding: 0;box-sizing: border-box;}
@@ -21,6 +22,15 @@
     .c-brown{
         color: white
     }
+
+    .hd{
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    position: fixed;
+    width: 100%;
+    background-color: white;
+    z-index: 99999;
+}
+
 
     .menuWrap{
 
@@ -113,10 +123,10 @@
     }
 
     .visual .item.st1{
-        background-image: url(./images/1.jpg);
+        background-image: url(./images/photo1.png);
     }
     .visual .item.st2{
-        background-image: url(./images/2.jpg);
+        background-image: url(./images/photo22.png);
     }
 
     
@@ -136,6 +146,46 @@
         width: 40%;
         height: 5px;
         background-color: white;
+    }
+
+    .banner{
+    display: flex;
+    justify-content: space-between;
+    padding-top:100px
+    }
+
+    .banner .card{
+        width: 384px;
+        height: 580px;
+
+    }
+
+    .banner .card .imgWrap img{
+        transition: 0.3s;
+        width: 384px;
+        height: 400px;
+    }
+
+
+    .banner .card .imgWrap:hover img{
+        /* transform:translate(0, -20px) scale(1.1) rotate(10deg) ; */
+        transform: translate(-20px, -20px);
+        box-shadow: 30px 30px 20px rgba(0,0,0,0.3);
+    }
+
+    /* .banner .card:hover .imgWrap img{
+
+    } */
+
+
+
+    .banner .card .card-text{
+        padding: 16px 16px;
+
+    }
+
+    .banner .card .card-text h3{
+        margin-bottom: 10px;
     }
 
 
@@ -179,6 +229,36 @@
             </li>
             
         </ul>
+    </div>
+
+    <div class="container banner">
+        <div class="card"><!-- 384*580 -->
+            <div class="imgWrap">
+                <img src="./images/photo2.png" alt="">
+            </div>
+            <div class="card-text">
+                <h3>Lorem ipsum dolor sit.</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum, dicta!</p>
+            </div>
+        </div>
+        <div class="card"><!-- 384*580 -->
+            <div class="imgWrap">
+                <img src="./images/photo2.png" alt="">
+            </div>
+            <div class="card-text">
+                <h3>Lorem ipsum dolor sit.</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum, dicta!</p>
+            </div>
+        </div>
+        <div class="card"><!-- 384*580 -->
+            <div class="imgWrap">
+                <img src="./images/photo2.png" alt="">
+            </div>
+            <div class="card-text">
+                <h3>Lorem ipsum dolor sit.</h3>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum, dicta!</p>
+            </div>
+        </div>
     </div>
 
     <script src="./js/jquery.min.js"></script>
