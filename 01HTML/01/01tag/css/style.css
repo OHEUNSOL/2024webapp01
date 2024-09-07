@@ -112,7 +112,7 @@
 
 .banner .card .imgWrap:hover img{
     /* transform:translate(0, -20px) scale(1.1) rotate(10deg) ; */
-    transform: translate(-20px, -20px);
+    transform: translate(20px, -20px);
     box-shadow: 30px 30px 20px rgba(0,0,0,0.3);
 }
 
